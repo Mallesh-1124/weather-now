@@ -1,0 +1,86 @@
+/* App.css */
+
+/* Set up base body styles and background gradient */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif; /* Clean, modern fonts */
+  background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%); /* Soft blue gradient */
+  min-height: 100vh; /* Ensure body covers full viewport height */
+}
+
+/* Weather info container spacing */
+.weather-info {
+  margin: 24px 0;
+}
+
+/* Temperature display: large, bold, colored */
+.temperature {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #2193b0; /* Blue accent */
+  margin-bottom: 8px;
+}
+
+/* Weather condition text: slightly smaller, muted color */
+.condition {
+  font-size: 1.2rem;
+  color: #555; /* Dark gray */
+  margin-bottom: 12px;
+}
+
+/* Location text: smallest, lighter gray */
+.location {
+  font-size: 1rem;
+  color: #888;
+  margin-bottom: 18px;
+}
+
+/* Input styling: wide, padded, rounded, with subtle border and focus effect */
+input[type="text"] {
+  width: 80%;
+  padding: 10px 12px;
+  border: 1px solid #b2bec3;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 16px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+/* Input focus: highlight border */
+input[type="text"]:focus {
+  border-color: #2193b0;
+}
+
+/* Button styling: gradient background, rounded, bold, interactive */
+button {
+  background: linear-gradient(90deg, #2193b0 0%, #6dd5ed 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 8px;
+}
+
+/* Button hover: reverse gradient for effect */
+button:hover {
+  background: linear-gradient(90deg, #6dd5ed 0%, #2193b0 100%);
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 500px) {
+  .app-container {
+    max-width: 95vw;
+    padding: 18px 6vw;
+  }
+  .header {
+    font-size: 1.5rem;
+  }
+  .temperature {
+    font-size: 2.2rem;
+  }
+}
