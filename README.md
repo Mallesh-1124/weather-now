@@ -1,30 +1,50 @@
 # Weather Now 🌤️
-A simple, responsive React application that lets users quickly check the **current weather** for any city using the [Open-Meteo API](https://open-meteo.com/).
+A simple, responsive React application that lets users quickly check the **current weather** for any city.
+It uses the **Open-Meteo API** {[Open-Meteo API](https://open-meteo.com/)} to fetch real-time weather conditions including:
+
+- 🌡️ Temperature  
+- 💨 Wind Speed  
+- 💧 Humidity  
+- 🌞 UV Index  
+- 👁️ Visibility  
 
 ## 🚀 Features
-* Search for any city and see **current weather conditions** (temperature, wind speed).
-* Powered by **Open-Meteo Geocoding + Weather APIs** (no API key needed).
-* Clean and minimal **UI/UX** for fast access.
-* Fully **responsive** (works on mobile and desktop).
-* Handles **loading states** and **error messages** gracefully.
+- Search weather by **city name**
+- Displays **current temperature and conditions**
+- Extra info: wind speed, humidity, visibility, UV index
+- Loading spinner while fetching data
+- Error message handling (e.g., if city not found)
+- Clean and modern **card-based UI**
 
 ## 🛠️ Tech Stack
 * **React** (functional components + hooks)
-* **TailwindCSS** (styling & responsiveness)
+* **CSS** (styling & responsiveness)
 * **Open-Meteo API** (weather & geocoding)
 * **React state management** (no external libraries)
 
 ## 📂 Project Structure
 ```
-/src
-  /components
-    WeatherSearch.jsx      // Search form
-    WeatherDisplay.jsx     // Weather results card
-    ErrorMessage.jsx       // Error UI
-    Loader.jsx             // Loading indicator
-  App.jsx                  // Main app logic
-  index.js                 // Entry point
-  App.css (or Tailwind)    // Styling
+weather-now/
+│── public/
+│ ├── favicon.ico
+│ ├── index.html
+│ └── manifest.json
+│
+│── src/
+│ ├── components/
+│ │ ├── ErrorMessage.jsx
+│ │ ├── Loader.jsx
+│ │ ├── WeatherDisplay.jsx
+│ │ └── WeatherSearch.jsx
+│ ├── App.css
+│ ├── App.js
+│ ├── index.css
+│ ├── index.js
+│ └── reportWebVitals.js
+│
+│── package.json
+│── package-lock.json
+│── README.md
 ```
 
 ## ⚙️ Setup & Installation
@@ -50,6 +70,8 @@ A simple, responsive React application that lets users quickly check the **curre
 4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## 🌍 API Usage
+This app uses Open-Meteo API which provides free, no-authentication weather data.
+
 * **Geocoding API** (city → latitude/longitude):
 
   ```
@@ -64,9 +86,13 @@ A simple, responsive React application that lets users quickly check the **curre
 
 
 ## 🖼️ Example
-**Search:** "Berlin"
+**Search:** "New York"
 **Result:**
-🌡️ 22°C, 💨 Wind 5 km/h
+- 🌡️ Temperature  
+- 💨 Wind Speed  
+- 💧 Humidity  
+- 🌞 UV Index  
+- 👁️ Visibility  
 
 
 ## ✅ Error Handling
